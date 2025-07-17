@@ -539,8 +539,7 @@ private:
                      const int& type_w, Filtration_value& t_prime, int& con) const {
         con = graph.is_connected(dom, w, t_prime);
         if (con == -1) return false;
-        
-        // Simplified logic using lookup table approach
+
         static const bool simplex_table[3][3][2] = {
             // domType = 0 (in)
             {{true, true}, {false, true}, {false, true}},
