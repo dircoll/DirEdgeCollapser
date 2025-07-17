@@ -646,8 +646,7 @@ private:
     
     bool split_edge_condition(const Vertex_set& N_x, const Vertex_set& N_y) const {
         if (N_x.empty() || N_y.empty()) return true;
-        
-        // Quick check using edge_map for efficiency
+
         for (const Vertex& x : N_x) {
             if (auto it = graph.edge_map.find(x); it != graph.edge_map.end()) {
                 for (const Vertex& y : N_y) {
