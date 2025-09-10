@@ -18,7 +18,7 @@ using Edge = std::tuple<Vertex, Vertex, Filtration_value>;
 constexpr Filtration_value infinity = std::numeric_limits<double>::infinity();
 
 // Memory-efficient vertex set using bitset
-constexpr size_t MAX_VERTICES = 10000;
+constexpr size_t MAX_VERTICES = 2000;
 using Vertex_set = std::bitset<MAX_VERTICES>;
 using Neighborhood = std::unordered_map<Vertex, Filtration_value>;
 using Vertex_set_tuple = std::tuple<Vertex_set, Vertex_set, Vertex_set>;
