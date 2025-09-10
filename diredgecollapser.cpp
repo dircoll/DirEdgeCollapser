@@ -1,4 +1,4 @@
-#include "DIR_EDGE_COLLAPSER.h" // Update this to match your header filename
+#include "DIR_EDGE_COLLAPSER.H" // Update this to match your header filename
 #include <fstream>
 #include <iostream>
 #include <sstream>
